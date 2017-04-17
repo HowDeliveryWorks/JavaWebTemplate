@@ -154,9 +154,11 @@ header {
     color: white;
     padding: 15px 0;
     font-size: 20px; }
+  .cart .cart-items {
+    margin-bottom: 30px; }
   .cart .item {
     height: 80px;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.2); }
+    border-bottom: 1px solid rgba(51, 51, 51, 0.21); }
     .cart .item * {
       font-size: 16px;
       padding-top: 34px; }
@@ -191,26 +193,24 @@ header {
       background-repeat: no-repeat;
       background-position: center bottom;
       background-size: 12px 12px; }
-  .cart .totals {
-    margin-top: 30px; }
-    .cart .totals .row {
-      height: 60px;
-      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-      padding-top: 22px;
-      font-size: 16px;
-      padding-left: 15px; }
-      .cart .totals .row div span {
-        font-size: 13px; }
-    .cart .totals .pre-total {
-      opacity: 0.8; }
-    .cart .totals .total .sum {
-      font-family: 'Minion Bold'; }
-    .cart .totals .proceed {
-      margin-top: 20px;
-      padding: 0; }
-      .cart .totals .proceed button {
-        width: 100%;
-        margin: auto; }
+  .cart .totals .row {
+    height: 60px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.21);
+    padding-top: 22px;
+    font-size: 16px;
+    padding-left: 15px; }
+    .cart .totals .row div span {
+      font-size: 13px; }
+  .cart .totals .pre-total {
+    opacity: 0.8; }
+  .cart .totals .total .sum {
+    font-family: 'Minion Bold'; }
+  .cart .totals .proceed {
+    margin-top: 20px;
+    padding: 0; }
+    .cart .totals .proceed button {
+      width: 100%;
+      margin: auto; }
   .cart .btn-order {
     padding: 15px 0;
     background-color: #ffc000;
@@ -244,5 +244,48 @@ footer {
         padding: 5px; }
     footer .container .privacy-policy {
       text-align: right; }
+
+.form-control {
+  border-radius: 0 !important; }
+
+.form-data {
+  padding: 20px; }
+  .form-data label {
+    font-family: 'Minion Pro';
+    font-size: 15px;
+    color: #d54b00; }
+
+.required {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d54b00;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 15px; }
+
+select {
+  display: block;
+  position: relative;
+  background-color: transparent !important; }
+
+.selection::before {
+  content: " ";
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  right: 5.2%;
+  top: 0px;
+  background-color: #313131; }
+
+textarea {
+  resize: none; }
+
+.mandatory {
+  color: #313131 !important;
+  font-size: 12px;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */

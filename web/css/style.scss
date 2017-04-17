@@ -193,6 +193,8 @@ header{
 		font-size: 20px;
 		// font-weight: bold;
 	}
+
+	.cart-items{margin-bottom: 30px;}
 	.item{
 		height: 80px;
 		border-bottom: $divider;
@@ -243,7 +245,6 @@ header{
 
 	
 	.totals{
-		margin-top: 30px;
 		.row{
 			height: 60px;
 			border-bottom: $divider;
@@ -318,3 +319,46 @@ footer{
 		}
 	}
 }
+
+.form-control{border-radius:0 !important; }
+
+.form-data{
+	padding: 20px;
+	label{
+		font-family: 'Minion Pro';
+		font-size: 15px;
+		color: $red;
+		}
+
+	
+}
+.required{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: $red;
+	margin:0;
+	padding:0;
+
+	position: absolute;
+	right:0;
+	top: 15px;
+}
+
+select{display:block;position:relative;background-color:transparent !important;}
+
+
+.selection::before{
+	content: " ";
+	width: 20px;
+	height: 100%;
+	position: absolute;
+	right:5.2%;
+	top: 0px;
+	background-color: $black;
+	// @include icon($arrow-down);
+	// background-position: center center;
+}
+
+textarea{resize:none;}
+.mandatory{color:$black !important;font-size:12px; opacity:0.8;}
