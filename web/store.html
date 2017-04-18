@@ -8,6 +8,7 @@
 
 
 	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/script.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
@@ -28,7 +29,7 @@
 			<div class="col-md-3 right-header">
 				<button class="btn-account">My account</button>
 				<button class="btn-cart">
-					<div id="itemsNum" class="cart-circle">12</div>
+					<div id="counter" class="cart-circle">0</div>
 				</button>
 			</div>
 		</div>
@@ -63,7 +64,7 @@
 				
 				<div class="size">400g<div class="spicy"></div></div>
 
-				<div class="photo">
+				<div class="photo"></div>
 					<div class="description">
 						<div class="desc-header">Ingridients:</div>
 						<article>
@@ -81,49 +82,15 @@
 							</ul>
 						</article>
 						<div class="roasting"><p>Roasting: </p><p> medium well</p></div>
-					</div>
+					
 				</div>
 
 				<div class="price">210 UAH</div>
-				<div class="add"><button class="btn-add" id="addToCart"></button></div>
+				<div class="add"><button class="btn-add" id="addToCart" onclick="addToCart(this)"></button></div>
 
 			</div>
 		</div>
 
-		<div class="col-md-4">
-			<div class="burger">
-				<div class="name">New York</div>
-				<div class="size">400g</div>
-				<div class="photo"><div class="description"></div></div>
-				
-				<div class="price">210 UAH</div>
-				<div class="add"><button class="btn-add" id="addToCart"></button></div>
-
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="burger">
-				<div class="name">New York</div>
-				<div class="size">400g</div>
-				<div class="photo"><div class="description"></div></div>
-				
-				<div class="price">210 UAH</div>
-				<div class="add"><button class="btn-add" id="addToCart"></button></div>
-
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="burger">
-				<div class="name">New York</div>
-				<div class="size">400g</div>
-				<div class="photo"><div class="description"></div></div>
-				
-				<div class="price">210 UAH</div>
-				<div class="add"><button class="btn-add" id="addToCart"></button></div>
-
-			</div>
-		</div>
 
 		
 	</div>
