@@ -1,4 +1,5 @@
 @import 'propertires';
+@import 'flex';
 
 body{
 	background-image: url('../img/dark_wood.png');
@@ -12,6 +13,8 @@ header{
 	width:100%;
 	background-image: url('../img/1.png');
 	height: 300px;
+
+
 
 	/* todo: shaddow */
 
@@ -178,6 +181,8 @@ header{
 		font-size: 44px;
 		font-family: 'Pristina';
 		color: $red;
+
+			.colorful{color: #d56e00;}
 	}
 }
 
@@ -306,7 +311,7 @@ footer{
 
 		div{
 			display: inline-block;
-			width: 33.0333%;
+			width: calc(100%/3.3);
 		}
 
 		.ua{
@@ -362,3 +367,154 @@ select{display:block;position:relative;background-color:transparent !important;}
 
 textarea{resize:none;}
 .mandatory{color:$black !important;font-size:12px; opacity:0.8;}
+
+.burger{
+	box-sizing: border-box;
+	// background-color:tomato;
+	height: 350px;
+	color: $black;
+	margin: 30px;
+	font-family: 'Minion Pro';
+	border: $divider;
+
+	&:hover{		
+		border: 1px solid black;
+		transition: 0.5s;
+		
+		.description{
+			opacity: .8;
+			visibility: visible;
+			transition-delay: 0s;
+			.photo{
+				background-size: 120% 12
+				0%;
+			}
+
+		}
+
+	}
+
+	.name{
+		font-family: 'Minion Bold';
+		font-size: 30px;
+		position: relative;
+		text-align: center;
+		margin:auto;
+		padding: 20px 15px 0 15px;
+		
+		color: #641818;
+	}
+
+	.size{
+		position: relative;
+		font-size: 14px;
+		text-align: right;
+		padding-right: 30%;
+		color: rgba(48,48,48, 0.78);
+		// border: 1px solid black;
+		.spicy{
+			position:absolute;
+			@include background-icon($spicy, 18px, 18px);
+			width: 18px;
+			height: 18px;
+			top:0;
+			right:40%;
+		}
+	}
+
+	.photo{
+		@include background-icon($burger-nyc, 150px, 135px);
+		background-position: center center;
+		width: 100%;
+		height: 190px;
+		position: relative;
+	}
+
+	.price, .add{
+		width: 48.899%;
+		float: left;
+		padding: 15px;
+		// text-align: center;
+	}
+
+	.price{
+		font-family: 'Minion Bold';
+		text-align: right;
+		padding-right: 10px;
+		font-size: 20px;
+		color: #641818;
+
+	}
+
+	.add{text-align: center;padding-right: 20px;position: relative;
+		.btn-add{
+			// position: absolute;
+			margin-top: -5px;
+			// right: 45px;
+			width: 30px;
+			height: 30px;
+			padding-right: 15px;
+			background-color: transparent;
+			border-width: 0;
+			// @include background-icon($cart-orange, 30px, 30px);
+			// background-position: center center;
+			background-color: #d56e00;
+  			 -webkit-mask-size: 100%;
+  			 -webkit-mask-image: $cart-orange;
+  			 cursor: pointer;
+
+		}
+		.btn-add:hover{
+			background-color: $red;
+		}
+
+	}
+
+
+	.description{
+		visibility: hidden;
+		background-color: black;
+		opacity: .8;
+		color: white;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 190px;
+		transition: opacity 0.5s, visibility 0.5s;
+		opacity:0;
+		padding: 22px 35px ;
+		.desc-header{color: $yellow;margin-bottom:10px;}
+
+		article{
+			-webkit-column-count:2;
+			column-count:2;
+			height: 90px;
+			padding:0; margin:0;
+			margin-bottom: 5px;
+
+
+			.ingridients{
+				padding:0;
+				list-style: none;
+				padding:0; margin:0;
+				li{padding:0; margin:0;margin-top:-4px;}
+			}
+		}
+
+		.roasting p{
+			width: auto;
+			float: left;
+
+			&:first-child{
+				color: $yellow;
+				padding-right: 10px;
+			}
+		}
+
+
+	}
+
+
+}
+
