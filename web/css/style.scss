@@ -81,6 +81,12 @@ header{
 	}
 }
 
+.main{
+	background-image: $main-banner;
+	height: 700px;
+	margin-top: -50px;
+}
+
 
 .btn-account{
 	padding: 7px 12px;
@@ -530,3 +536,69 @@ textarea{resize:none;}
 
 }
 
+/*---------------------------main--------------------------*/
+
+
+
+/* TODO : shaddows */
+.anti-slider{
+	width:100%;
+	text-align: center;
+	margin-top: 55px;
+
+	.sl-header{
+		font-family: 'Pristina';
+		color: $yellow;
+		font-size: 60px;
+	}
+
+	p{
+		margin-top: 20px;
+		color: white;
+		font-family: 'Minion Pro';
+		font-size: 20px;
+	}
+
+	.btn-visit{
+		margin: auto;
+		font-family: 'Minion Bold';
+		font-size: 16px;		
+		background-color: rgba(255,207,62,0.73);
+		border-width:0;
+		padding:10px 50px;
+		color: $black;
+		margin-top: 10px;
+
+		&:hover{
+			background-color: rgba(255,207,62,1);
+		}
+	}
+
+
+}
+
+
+.index{
+	margin-top: 30px;
+	// position: relative;
+	.about{
+		padding: 30px 100px 20px 20px;
+	}
+	.header, article{
+		font-size: 60px;
+		text-align: right;
+	}
+
+	article{
+		font-family: 'Minion Pro';
+		margin-top: 30px;
+		padding-left: 0px;
+		font-size: 22px;
+	}
+
+	.image{
+		padding: 20px  20px 20px 100px;
+		img{border: 15px solid $black;width:355px;height:400px;}
+	}
+
+}

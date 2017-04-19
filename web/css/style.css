@@ -103,6 +103,11 @@ header {
     width: 100%;
     height: 15px; }
 
+.main {
+  background-image: url(../img/banner.png);
+  height: 700px;
+  margin-top: -50px; }
+
 .btn-account {
   padding: 7px 12px;
   border: 1px solid white;
@@ -443,5 +448,51 @@ textarea {
       .burger .description .roasting p:first-child {
         color: #ffcf3e;
         padding-right: 10px; }
+
+/*---------------------------main--------------------------*/
+/* TODO : shaddows */
+.anti-slider {
+  width: 100%;
+  text-align: center;
+  margin-top: 55px; }
+  .anti-slider .sl-header {
+    font-family: 'Pristina';
+    color: #ffcf3e;
+    font-size: 60px; }
+  .anti-slider p {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Minion Pro';
+    font-size: 20px; }
+  .anti-slider .btn-visit {
+    margin: auto;
+    font-family: 'Minion Bold';
+    font-size: 16px;
+    background-color: rgba(255, 207, 62, 0.73);
+    border-width: 0;
+    padding: 10px 50px;
+    color: #313131;
+    margin-top: 10px; }
+    .anti-slider .btn-visit:hover {
+      background-color: #ffcf3e; }
+
+.index {
+  margin-top: 30px; }
+  .index .about {
+    padding: 30px 100px 20px 20px; }
+  .index .header, .index article {
+    font-size: 60px;
+    text-align: right; }
+  .index article {
+    font-family: 'Minion Pro';
+    margin-top: 30px;
+    padding-left: 0px;
+    font-size: 22px; }
+  .index .image {
+    padding: 20px  20px 20px 100px; }
+    .index .image img {
+      border: 15px solid #313131;
+      width: 355px;
+      height: 400px; }
 
 /*# sourceMappingURL=style.css.map */
